@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>YelpCamp</title>
+        <title>Crazy Campers</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="/stylesheets/main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
            <nav class="navbar navbar-default navbar-fixed-top">
                 <div class="container-fluid">
                     <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
                         <a class="navbar-brand" href="/">Crazy Campers</a>
                     </div>
-                    <div class="collapse navbar-collapse">
+                    <div class="collapse navbar-collapse" id="bs-nav-demo">
                         <ul class="nav navbar-nav navbar-right">
                             <% if(!currentUser){ %>
                                 <li><a href="/login">Login</a></li>
